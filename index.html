@@ -32,6 +32,21 @@
     a:hover {
       text-decoration: underline;
     }
+    .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.header-photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255,255,255,0.7);
+}
+
 
     /* ===== HEADER / HERO ===== */
     header {
@@ -98,6 +113,15 @@
       border-radius: 20px;
       font-size: 0.95rem;
     }
+.education {
+  margin-top: 2rem;
+  font-size:0.95rem;
+}
+
+.education p {
+  margin-left: 0;      /* aligns with other text */
+  margin-bottom: 0.5rem;
+}
 
     /* Footer */
     footer {
@@ -118,20 +142,27 @@
 
   <!-- ===== HERO / INTRO SECTION ===== -->
   <header>
-    <div class="container">
-      <h1><!-- CHANGE THIS -->Your Name Here</h1>
-      <p><!-- CHANGE THIS -->Lorem | Ipsum | Lorem Ipsum</p>
+  <div class="container header-content">
+    <img 
+      src="headshot.jpg" 
+      alt="Erin Hennessey headshot"
+      class="header-photo"
+    />
+    <div>
+      <h1>Erin Hennessey</h1>
+      <p>Data Analytics • Business Intelligence • Technology</p>
     </div>
-  </header>
+  </div>
+</header>
+
+
 
   <!-- ===== ABOUT / BIO SECTION ===== -->
   <section id="about">
     <div class="container">
       <h2>About Me</h2>
-      <p><!-- CHANGE THIS -->Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      
-      <p><!-- CHANGE THIS -->Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
+    
+<p>I’m an Economics student in Clemson University’s Combined Bachelor’s to Master’s program, pursuing both my B.S. in Economics and M.S. in Economic Analytics. With a strong academic foundation in econometrics, data analytics, and economic research, I’m passionate about using data to solve complex problems and drive better decision-making.</p>
       <!-- Optional: Add a profile photo (upload your photo to the repo as 'profile.jpg' and update the src) -->
       <!-- <img src="profile.jpg" alt="Your Photo" style="width:200px; border-radius:50%; display:block; margin:2rem auto;"> -->
     </div>
@@ -141,7 +172,7 @@
   <section id="projects">
     <div class="container">
       <h2>My Projects</h2>
-      <p><!-- CHANGE THIS -->Here are some things I've built. Click the links to see them live or view the code on GitHub.</p>
+      <p>A selection of academic and personal projects demonstrating my technical skills.</p>
 
       <div class="projects-grid">
 
@@ -150,11 +181,11 @@
           <!-- Optional: Add a screenshot (upload image to repo and update src) -->
           <!-- <img src="project1-screenshot.png" alt="Project 1"> -->
           <div class="project-info">
-            <h3><!-- CHANGE THIS -->Project One Title</h3>
-            <p><!-- CHANGE THIS -->A short description of what this project does, technologies used (e.g., HTML, CSS, JavaScript), and what you learned.</p>
+            <h3><!-- CHANGE THIS -->Do Mega Sporting Events Pay Off? An Economic Analysis of the Olympics & World Cup</h3>
+            <p><!-- CHANGE THIS -->An economic analysis examining the costs and benefits of hosting the Olympics and World Cup, evaluating their impact on economic growth, tourism, and public spending.</p>
             <p>
-              <a href="https://github.com/yourusername/project-one" target="_blank">View on GitHub</a> | 
-              <a href="https://yourusername.github.io/project-one" target="_blank">Live Demo</a>
+              <a href="https://github.com/eehennessey/Olympic-Games-Analysis/blob/a243d8f51461ffbcc990337944736268a547bf82/FinalProject.Rmd" target="_blank">Code</a> | 
+              <a href="https://github.com/eehennessey/Olympic-Games-Analysis/blob/a243d8f51461ffbcc990337944736268a547bf82/Full%20Project.pdf" target="_blank">Paper Report</a>
             </p>
           </div>
         </div>
@@ -163,11 +194,11 @@
         <div class="project-card">
           <!-- <img src="project2-screenshot.png" alt="Project 2"> -->
           <div class="project-info">
-            <h3><!-- CHANGE THIS -->Project Two Title</h3>
-            <p><!-- CHANGE THIS -->Description here. Make it sound exciting!</p>
+            <h3><!-- CHANGE THIS -->Thanksgiving Dashboard</h3>
+            <p><!-- CHANGE THIS -->An interactive dashboard analyzing Thanksgiving-related trends and patterns, allowing users to explore data through dynamic visualizations and filters.</p>
             <p>
-              <a href="#" target="_blank">View on GitHub</a> | 
-              <a href="#" target="_blank">Live Demo</a>
+              <a href="https://erinhennessey.shinyapps.io/Final_project/">Dashboard</a> | 
+              <a href="https://github.com/eehennessey/Thankgiving-Dashboard/blob/dd9f143852ced79cb526d559790ad02ac9f46d89/Final.Project.Rmd">R Code</a>
             </p>
           </div>
         </div>
@@ -191,12 +222,18 @@
         <!-- Add more <span class="skill">Skill Name</span> lines here -->
       </div>
 
-      <!-- Optional: Add education or resume highlights -->
-      <h3 style="margin-top: 2rem;">Education</h3>
-      <p><!-- CHANGE THIS -->High School / College / University — [Year]–Present<br>
-         Major: [Your Major]</p>
-    </div>
-  </section>
+
+<div class="education">
+  <h3>Education</h3>
+
+  <p><strong>Clemson University</strong> — 2023–Present</p>
+  <p><strong>Master of Science</strong> — Economic Analytics</p>
+  <p>
+    <strong>Bachelor of Science</strong> — Economics<br>
+    Minor: Anthropology
+  </p>
+</div>
+
 
   <!-- ===== CONTACT SECTION ===== -->
   <section id="contact">
@@ -204,9 +241,9 @@
       <h2>Get in Touch</h2>
       <p><!-- CHANGE THIS -->I'm always open to chatting about projects or internships.</p>
       <ul style="list-style: none; margin-top: 1rem;">
-        <li>Email: <!-- CHANGE THIS -->your.email@example.com</li>
-        <li>GitHub: <!-- CHANGE THIS --><a href="https://github.com/yourusername">github.com/yourusername</a></li>
-        <li>LinkedIn: <!-- CHANGE THIS --><a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></li>
+        <li>Email: <!-- CHANGE THIS -->erin.hennessey0@gmail.com</li>
+        <li>GitHub: <!-- CHANGE THIS --><a href="https://github.com/eehennessey">github.com/eehennessey</a></li>
+        <li>LinkedIn: <!-- CHANGE THIS --><a href="https://www.linkedin.com/in/erinhennessey01/">linkedin.com/in/erinhennessey01</a></li>
         <!-- Add more links (Twitter/X, etc.) -->
       </ul>
     </div>
@@ -214,7 +251,7 @@
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; <!-- CHANGE THIS -->2026 Your Name. Built with HTML & CSS. Hosted on GitHub Pages.</p>
+    <p>&copy; <!-- CHANGE THIS -->2026 Erin Hennessey. Built with HTML & CSS. Hosted on GitHub Pages.</p>
   </footer>
 
 </body>
